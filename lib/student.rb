@@ -8,7 +8,7 @@ class Student < InteractiveRecord
   #end
 
   self.column_names.each do |col_name|
-    attr_accessor col_name.to_sym
+    attr_accessor col_name.to_s
   end
 
   def self.find_by_name(name)
